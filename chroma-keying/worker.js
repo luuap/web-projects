@@ -107,7 +107,7 @@ function RGBToHSL_optimized(r, g, b) {
     s = 100 * delta / (1 - Math.abs(l - 1));
   }
 
-  l *= 200;
+  l *= 50;
 
   return [h, s, l]
 }
