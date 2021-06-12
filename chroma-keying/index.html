@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>Chroma Keying Using Canvas and WebWorkers</title>
+  <script src="index.js" type="module"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body style="visibility: hidden">
+
+  <h1>Chroma Keying Using Canvas and WebWorkers</h1>
+
+  <div class="video-container">    
+    <div>
+      <h4>Live Stream</h4>
+      <video id="video" muted autoplay playsinline></video>
+    </div>
+    <div>
+      <h4>Processed Stream</h4>
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <h3>Pick HSL range:</h3>
+  <div id="color-picker">
+
+    <div>
+      <label for="hue-min">Hue Min</label>
+      <span class="color-box" name="hue-min-box"></span>
+      <input type="range" name="hue-min" min="0" max="360">
+      <span class="color-box" name="hue-max-box"></span>
+      <label for="hue-max">Hue Max</label>
+      <input type="range" name="hue-max" min="0" max="360">
+    </div>
+
+    <div>
+      <label for="saturation-min">Saturation Min</label>
+      <input type="range" name="saturation-min" min="0" max="100">
+    </div>
+
+    <div>
+      <label for="lightness-min">Ligntness Min</label>
+      <input type="range" name="lightness-min" min="0" max="100">
+      <label for="lightness-max">Lightness Max</label>
+      <input type="range" name="lightness-max" min="0" max="100">
+    </div>
+
+  </div>
+
+  <h3>Stats:</h3>
+  <div>
+    <span>Average time elapsed between sending frame to worker and getting frame back: </span>
+    <span id="average"></span>
+  </div>
+
+</body>
+
+</html>

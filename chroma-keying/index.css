@@ -1,0 +1,26 @@
+:root {
+  background-color: rgb(42, 42, 42);
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+#video {
+  height: 45vh;
+}
+
+#canvas {
+  height: 45vh;
+  background-color: magenta;
+}
+
+.color-box {
+  display: inline-block;
+  height: 1em; 
+  width: 3em;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
