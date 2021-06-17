@@ -1,0 +1,15 @@
+:root {
+  background-color: rgb(42, 42, 42);
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+#canvas {
+  display: block;
+  background-color: whitesmoke;
+  border: 2px solid black;
+}
+
+#cluster-btn {
+  margin: 12px;
+}
