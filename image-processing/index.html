@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>Image Processing with WebGL</title>
+  <script src="index.js" type="module"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body style="visibility: hidden">
+
+  <h1>Image Processing with WebGL</h1>
+
+  <div class="video-container">    
+    <div>
+      <h4>Live Stream</h4>
+      <video id="video" muted autoplay playsinline></video>
+    </div>
+    <div>
+      <h4>Processed Stream</h4>
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <div class="kernel-select">
+    <label for="kernel-select-input">Choose Kernel</label>
+    <select name="kernel-select-input" id="kernel-select-input"></select>
+  </div>
+
+</body>
+
+</html>
